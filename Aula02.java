@@ -4,6 +4,12 @@ public class Aula02 {
         jorge.atrapalharSono();
         Cachorro getulio = new Cachorro();
         getulio.atrapalharSono();
+        Pernilongo mari = new Pernilongo();
+        mari.atrapalharSono();
+        Pernilongo altair = new Pernilongo();
+        altair.atrapalharSono();
+        Pernilongo joyce = new Pernilongo();
+        joyce.atrapalharSono();
 
     }
 }
