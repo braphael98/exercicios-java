@@ -1,31 +1,25 @@
 public class Aula02 {
     public static void main(String[] args) {
-        Pernilongo jorge = new Pernilongo();
-        jorge.atrapalharSono();
-        Cachorro getulio = new Cachorro();
-        getulio.atrapalharSono();
-        Pernilongo mari = new Pernilongo();
-        mari.atrapalharSono();
-        Pernilongo altair = new Pernilongo();
-        altair.atrapalharSono();
-        Pernilongo joyce = new Pernilongo();
-        joyce.atrapalharSono();
+        Animal jorge = new Animal("au au au au");
+        jorge.atraphalharSono();
 
     }
 }
 
-class Pernilongo {
-    String barulho = "piiiii";
+class Animal {
+    String barulho;
 
-    public void atrapalharSono() {
+    public void fazBarulho() {
         System.out.println(this.barulho);
     }
-}
 
-class Cachorro {
-    String barulho = "Au au";
+    public void atraphalharSono() {
+        for (int i = 0; i < 10; i++) {
+            this.fazBarulho();
+        }
+    }
 
-    public void atrapalharSono() {
-        System.out.println(this.barulho);
+    public Animal(String som) {
+        this.barulho = som;
     }
 }
