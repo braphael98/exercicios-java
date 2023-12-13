@@ -18,6 +18,7 @@ public class Heranca00 {
 }
 
 abstract class Animal {
+    String nome;
     String onomatopeia; // representacao sonora emitida pelo animal
     String cor;
     Integer idade;
@@ -31,6 +32,7 @@ abstract class Animal {
         System.out.println("Raça: " + this.raca);
         System.out.println("Idade: " + this.idade);
         System.out.println("Cor: " + this.cor);
+        System.out.println("Nome: "+ this.nome);
 
     }
 
@@ -38,6 +40,7 @@ abstract class Animal {
 
 class Cachorro extends Animal {
     Cachorro() { // metodo construtor, o que define o cão !
+        this.nome = "fred";
         this.onomatopeia = "au au";
         this.raca = "vira-lata";
         this.cor = "Caramelo";
